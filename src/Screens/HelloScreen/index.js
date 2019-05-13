@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, Image } from 'react-native'
 import { styles } from "./Style"
-import { Login } from "../../Constants/ScreenName";
+import { SCREEN_NAME } from "../../Constants/ScreenName";
 import { images } from "../../Assets"
 
 export class HelloScreen extends Component {
@@ -15,8 +15,8 @@ export class HelloScreen extends Component {
 
     componentDidMount() {
         setTimeout(() => {
-            this.props.navigation.navigate(Login);
-        }, 2000);
+            this.props.navigation.navigate(SCREEN_NAME.LOGIN);
+        }, 1000);
     }
 
     render() {

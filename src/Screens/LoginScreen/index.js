@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
 import { styles } from "./Style"
 import { images } from "../../Assets"
-import { ForgotPassword } from "../../Constants/ScreenName";
+import { SCREEN_NAME } from "../../Constants/ScreenName";
 
 export class LoginScreen extends Component {
     static navigationOptions = {
@@ -20,7 +20,8 @@ export class LoginScreen extends Component {
      * handle user Login, if logined redirect HomeScreen
      */
     handleLogin = () => {
-
+        const { navigation } = this.props;
+        navigation.navigate(SCREEN_NAME.MAIN);
     }
     render() {
         return (
@@ -48,10 +49,10 @@ export class LoginScreen extends Component {
                             onChangeText={(text) => this.setState({ text })}
                         />
                     </View>
-                    <TouchableOpacity style={styles.loginTouchable}>
+                    <TouchableOpacity style={styles.loginTouchable} onPress={this.handleLogin}>
                         <Text style={styles.labelButton}>LOG IN</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={() => this.props.navigation.navigate(ForgotPassword)}>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate(SCREEN_NAME.FORGOT_PASSWORD)}>
                         <Text style={styles.labelInput}>Forgot Password?</Text>
                     </TouchableOpacity>
                 </View>

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../Assets/Theme"
+import { colors } from "../../Assets/Theme";
 
 const mainBackgroundColor = "#25928E";
 const fontColor = "#ECF0F1";
@@ -7,7 +7,7 @@ const fontColor = "#ECF0F1";
 export const styles = StyleSheet.create({
     loginContainer: {
         flex: 1,
-        backgroundColor: colors.mainBackgroundColor
+        backgroundColor: colors.mainBackgroundColor,
     },
     logoContainer: {
         flex: 40,
@@ -29,14 +29,14 @@ export const styles = StyleSheet.create({
     },
     labelInput: {
         paddingHorizontal: 20,
-        color: colors.fontColor
+        color: colors.fontColor,
     },
     textInput: {
         height: 35,
         paddingHorizontal: 20,
         color: colors.fontColor,
         borderBottomWidth: 1,
-        borderBottomColor: colors.fontColor
+        borderBottomColor: colors.fontColor,
     },
     loginTouchable: {
         marginVertical: 30,
@@ -44,6 +44,6 @@ export const styles = StyleSheet.create({
     labelButton: {
         color: colors.fontColor,
         fontSize: 16,
-        fontWeight: "bold"
-    }
-})
+        fontWeight: "bold",
+    },
+});

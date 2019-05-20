@@ -6,4 +6,4 @@ export const SCREEN_NAME = {
     HOME: "HOME",
     PROFILE: "PROFILE",
     SETTING: "SETTING",
-}
+};

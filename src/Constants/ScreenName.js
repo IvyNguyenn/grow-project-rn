@@ -1,3 +1,9 @@
-export const Hello = "Hello";
-export const Login = "Login";
-export const ForgotPassword = "ForgotPassword";
+export const SCREEN_NAME = {
+    HELLO: "HELLO",
+    LOGIN: "LOGIN",
+    FORGOT_PASSWORD: "FORGOT_PASSWORD",
+    MAIN: "MAIN",
+    HOME: "HOME",
+    PROFILE: "PROFILE",
+    SETTING: "SETTING",
+};

@@ -1,16 +1,23 @@
 import HelloScreen from "../Screens/HelloScreen";
 import LoginScreen from "../Screens/LoginScreen";
 import ForgotPassScreen from "../Screens/ForgotPassScreen";
-// import { Hello, Login, ForgotPassword } from "../Constants/ScreenName";
+import MainScreen from "../Screens/MainScreen";
+import { SCREEN_NAME } from "../Constants/ScreenName";
 
 export const STACK_NAVIGATION = {
-    Hello: {
+    HELLO: {
         screen: HelloScreen,
     },
-    Login: {
+    LOGIN: {
         screen: LoginScreen,
     },
-    ForgotPassword: {
+    FORGOT_PASSWORD: {
         screen: ForgotPassScreen,
+    },
+    MAIN: {
+        screen: MainScreen,
+        navigationOptions: {
+            header: null
+        }
     },
 }
